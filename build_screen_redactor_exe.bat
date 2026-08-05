@@ -30,6 +30,7 @@ python -m PyInstaller ^
   --name ScreenRedactor ^
   --collect-all rapidocr ^
   --collect-all onnxruntime ^
+  --collect-all customtkinter ^
   --collect-all pyvirtualcam ^
   --collect-submodules mss ^
   --collect-submodules cv2 ^
@@ -37,7 +38,7 @@ python -m PyInstaller ^
 
 if errorlevel 1 (
     echo.
-    echo Build failed.
+    echo Build failed. Copy the error text and send it to Codex.
     pause
     exit /b 1
 )
