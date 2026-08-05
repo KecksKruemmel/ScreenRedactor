@@ -38,7 +38,7 @@ python -m PyInstaller ^
 
 if errorlevel 1 (
     echo.
-    echo Build failed. Copy the error text and send it to Codex.
+    echo Build failed.
     pause
     exit /b 1
 )
